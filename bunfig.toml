@@ -1,0 +1,7 @@
+[install]
+# Hoist dependencies to the workspace root where possible.
+linker = "hoisted"
+exact = false
+
+[install.lockfile]
+save = true

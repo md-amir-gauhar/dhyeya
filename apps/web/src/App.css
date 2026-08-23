@@ -1,0 +1,58 @@
+.shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: -0.03em;
+}
+
+.header p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.panel {
+  margin-top: 40px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.panel h2 {
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px 16px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.details dt {
+  color: var(--muted);
+}
+
+.details dd {
+  margin: 0;
+}
+
+.status {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.status--ok {
+  color: #4ade80;
+}
+
+.status--down {
+  color: #f87171;
+}

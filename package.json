@@ -1,0 +1,30 @@
+{
+  "name": "dhyeya",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "bun@1.2.21",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter '*' dev",
+    "dev:api": "bun run --filter @dhyeya/api dev",
+    "dev:landing": "bun run --filter @dhyeya/landing dev",
+    "dev:web": "bun run --filter @dhyeya/web dev",
+    "build": "bun run --filter '*' build",
+    "lint": "bun run --filter '*' lint",
+    "test": "bun run --filter '*' test",
+    "typecheck": "bun run --filter '*' typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
+    "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules apps/*/dist apps/*/.next packages/*/dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "bun": ">=1.2.0"
+  }
+}

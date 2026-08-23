@@ -1,0 +1,11 @@
+{
+  "extends": "@dhyeya/tsconfig/vite.json",
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "vite.config.ts"]
+}
